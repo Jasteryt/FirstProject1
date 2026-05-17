@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PlayerControl : MonoBehaviour
     public float maxY = 4;
     public InputActionReference moveAction;
     private float moveInput;
+    private float jumpAction;
+    private float jumpInput;
 
 
     private void Start()
