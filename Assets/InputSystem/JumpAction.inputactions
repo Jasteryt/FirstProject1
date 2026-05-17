@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "JumpAction",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "b37f0b6b-f1bc-4269-8f5b-18d1eda57fc9",
+            "actions": [
+                {
+                    "name": "FlyAction",
+                    "type": "Button",
+                    "id": "2cfc2ce9-c7e4-4b12-aa7b-449ea76352ab",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "063a2e5d-6cfb-43dc-83d7-d6399fcdb7f7",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FlyAction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
