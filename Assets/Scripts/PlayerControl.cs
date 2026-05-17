@@ -11,7 +11,7 @@ public class PlayerControl : MonoBehaviour
     public float maxY = 4;
     public InputActionReference moveAction;
     private float moveInput;
-    private float jumpAction;
+    private InputActionReference jumpAction;
     private float jumpInput;
 
 
@@ -23,18 +23,19 @@ public class PlayerControl : MonoBehaviour
     private void Update()
     {
         moveInput = moveAction.action.ReadValue<float>();
-        
-        vertical = Input.GetAxis("Vertical");
+        jumpInput = jumpAction.action.ReadValue<float>();
         
     }
     
     private void OnEnable()
     {
         moveAction.action.Enable();
+        jumpAction.action.Enable();
     }
     private void OnDisable()
     {
         moveAction.action.Disable();
+        jumpAction.action.Disable();
     }
 
        
