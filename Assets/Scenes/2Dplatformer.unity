@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
   speed: 5
-  gravity: -9.81
+  minY: -2.9
+  maxY: 3
 --- !u!212 &36739135
 SpriteRenderer:
   serializedVersion: 2
