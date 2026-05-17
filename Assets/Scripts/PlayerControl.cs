@@ -3,9 +3,6 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public float speed = 1;
-    
-    
-    
     private Rigidbody2D rb;
     private float horizontal;
     private float vertical;
