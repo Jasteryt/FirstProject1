@@ -8,6 +8,8 @@ public class PlayerControl : MonoBehaviour
     private float vertical;
     public float minY = 0;
     public float maxY = 4;
+    public InputActionReference moveAction;
+    private float moveInput;
 
 
     private void Start()
@@ -17,10 +19,21 @@ public class PlayerControl : MonoBehaviour
     }
     private void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
+        moveInput = moveAction.action.ReadValue<float>();
+        
         vertical = Input.GetAxis("Vertical");
         
     }
+    
+    private void OnEnable()
+    {
+        moveAction.action.Enable();
+    }
+    private void OnDisable()
+    {
+        moveAction.action.Disable();
+    }
+
        
     
     private void FixedUpdate()
